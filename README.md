@@ -39,7 +39,7 @@ El notebook es el informe del proyecto: incluye la motivación, la metodología,
 
 El notebook ya incluye todas las salidas, así que no hace falta ejecutarlo para revisarlo.
 
-**En Google Colab:** abre el notebook con el botón de arriba y ejecuta *Entorno de ejecución → Ejecutar todo*. La primera celda instala `sentence-transformers` y `optuna`, y el notebook descarga los datos de Inside Airbnb y el modelo de lenguaje. Lo más lento es la validación anidada (40 búsquedas de Optuna): en la máquina de 24 hilos donde lo ejecuté, el notebook completo tardó unos 24 minutos; en el Colab gratuito (2 núcleos) puede tardar varias horas.
+**En Google Colab:** abre el notebook con el botón de arriba y ejecuta *Entorno de ejecución → Ejecutar todo*. La primera celda instala `sentence-transformers` y `optuna`, y el notebook descarga los datos de Inside Airbnb y el modelo de lenguaje. Lo más lento es la validación anidada (40 búsquedas de Optuna): en la máquina de 24 hilos donde lo ejecuté, el notebook completo tardó unos 22 minutos; en el Colab gratuito (2 núcleos) puede tardar varias horas.
 
 **En local** (probado con Python 3.13 y las versiones exactas de `requirements.txt`):
 
