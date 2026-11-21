@@ -28,8 +28,8 @@ El notebook es el informe del proyecto: incluye la motivación, la metodología,
 2. **Feature extraction con transfer learning.** Las descripciones se convierten en vectores de 384 dimensiones con el modelo preentrenado `paraphrase-multilingual-MiniLM-L12-v2` (Sentence-Transformers, *mean pooling*, máximo 128 tokens).
 3. **Pipeline de scikit-learn.** Imputación, escalado, *one-hot*, PCA del texto, selección tipo filter (`SelectPercentile` con `f_regression`) y el modelo. El objetivo se entrena en escala log con `TransformedTargetRegressor`, pero las métricas se reportan en MXN.
 4. **Partición.** 80 % entrenamiento y 20 % prueba, estratificada por quintiles de precio, con semilla 42. La partición se hace antes de ajustar cualquier transformación.
-5. **Optimización.** Optuna (TPE, 30 pruebas por modelo) con validación cruzada repetida 2×5 sobre entrenamiento. Incluye curvas de validación (entrenamiento y validación) y curvas de aprendizaje.
-6. **Comparación estadística.** Ridge frente a Random Forest, ambos en su versión optimizada, con validación cruzada repetida 10×10. Se reportan la prueba t corregida (Nadeau-Bengio), Wilcoxon y la t pareada sin corregir como contraste.
+5. **Optimización.** Optuna (TPE, 30 pruebas por modelo) con validación cruzada repetida 2×5 sobre entrenamiento. Incluye la curva de validación de λ (entrenamiento y validación) y las curvas de aprendizaje de ambos modelos.
+6. **Comparación estadística.** Ridge frente a Random Forest, ambos en su versión optimizada, con validación cruzada repetida 10×10. Se reportan la prueba t corregida (Nadeau-Bengio) y Wilcoxon como contraste.
 7. **t-SNE.** Proyección de lo que ve el modelo, es decir, la salida del pipeline justo antes del regresor, coloreada por quintil de precio.
 8. **Interpretación.** Residuos, errores por rango de precio e importancia por permutación agrupada en prueba.
 
