@@ -1,0 +1,9 @@
+# Los datos se descargan de Inside Airbnb al ejecutar el notebook; no se versionan
+data/
+*.csv
+*.csv.gz
+
+# Entornos y cachés
+.venv/
+__pycache__/
+.ipynb_checkpoints/
