@@ -58,7 +58,7 @@ Si existe `data/listings.csv.gz`, el notebook usa esa copia; si no, descarga el 
 
 ## Datos y privacidad
 
-Los datos son públicos y se descargan de Inside Airbnb al ejecutar el notebook; no se incluyen en el repositorio. No uso como variables datos personales de los anfitriones (nombres, fotos o identificadores), ni el identificador o la URL del anuncio, ni variables calculadas a partir del precio. El diccionario de datos está en la Sección 2.2 del notebook.
+Los datos son públicos y se descargan de Inside Airbnb al ejecutar el notebook; no se incluyen en el repositorio. No uso como variables datos personales de los anfitriones (nombres, fotos o identificadores), ni el identificador o la URL del anuncio, ni variables calculadas a partir del precio. Las variables usadas se describen en la Sección 2 del notebook.
 
 ## Uso de inteligencia artificial
 
